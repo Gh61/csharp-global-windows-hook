@@ -7,7 +7,20 @@ Microsoft [says](https://support.microsoft.com/en-us/help/318804/how-to-set-a-wi
 
 #### Small backstory
 
-*Because I needed to write application wich block keypresses only from certain keyboard I need cooperation of Raw&nbsp;Input API (check for concrete input device) and Keyboard HOOK (block keys). I have done some pieces togethter and has working Raw&nbsp;Input and Keyboard Low-Level hook. This seems OK, but later I found that this Low-Level event is called before RawInput and I need **WH_KEYBOARD** event, called after RawInput. So I did a try and it worked:*
+*Because I needed to write application wich block keypresses only from certain keyboard I need cooperation of Raw&nbsp;Input API (check for concrete input device) and Keyboard HOOK (block keys). I have done some pieces togethter and has working Raw&nbsp;Input and Keyboard Low-Level hook. This seems OK, but later I found that this Low-Level event is called before RawInput and I need **WH_KEYBOARD** event, called after RawInput. So I did a try and it worked\*:*
+
+\* I only thought it worked, it was another events firing to my callback.
+
+# Not working (yet?)
+Sorry fot disappointing you. I thought it was warking but it wasn't. 
+There is some chance someone could take this to the end.
+
+Registering hook is not causing any error. (In LastWinError is success code).
+Maybe there is something that must be done or this is really not possible.
+
+There are some alternatives for this problem:
+- write part or whole application in C++ (if only part, it may be used by pinvoke from C# app)
+- use of [custom driver](http://www.oblita.com/interception) wich does this work for you.
 
 ## Idea
 
@@ -41,7 +54,7 @@ If someone tested new event type, please let me know, so i will update this tabl
 | WH_GETMESSAGE      | 3      | ?              |
 | WH_JOURNALPLAYBACK | 1      | ?              |
 | WH_JOURNALRECORD   | 0      | ?              |
-| WH_KEYBOARD        | 2      | &#10004;       |
+| WH_KEYBOARD        | 2      | &#128473;      | #&#10004;
 | WH_KEYBOARD_LL     | 13     | native support |
 | WH_MOUSE           | 7      | ?              |
 | WH_MOUSE_LL        | 14     | native support |
