@@ -7,7 +7,7 @@ Microsoft [says](https://support.microsoft.com/en-us/help/318804/how-to-set-a-wi
 
 #### Small backstory
 
-*Because I needed to write application wich block keypresses only from certain keyboard I need cooperation of Raw&nbsp;Input API (check for concrete input device) and Keyboard HOOK (block keys). I have done some pieces togehter and has working Raw&nbsp;Input and Keyboard Low-Level hook. This seems OK, but later I found that this Low-Level event is called before RawInput and I need **WH_KEYBOARD** event, called after RawInput. So I did a try and it worked:*
+*Because I needed to write application wich block keypresses only from certain keyboard I need cooperation of Raw&nbsp;Input API (check for concrete input device) and Keyboard HOOK (block keys). I have done some pieces togethter and has working Raw&nbsp;Input and Keyboard Low-Level hook. This seems OK, but later I found that this Low-Level event is called before RawInput and I need **WH_KEYBOARD** event, called after RawInput. So I did a try and it worked:*
 
 ## Idea
 
