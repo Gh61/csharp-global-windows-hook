@@ -12,7 +12,7 @@ Microsoft [says](https://support.microsoft.com/en-us/help/318804/how-to-set-a-wi
 \* I only thought it worked, it was another events firing to my callback.
 
 # Not working (yet?)
-Sorry fot disappointing you. I thought it was warking but it wasn't. 
+Sorry for disappointing you. I thought it was warking but it wasn't. 
 There is some chance someone could take this to the end.
 
 Registering hook is not causing any error. (In LastWinError is success code).
