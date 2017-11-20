@@ -12,14 +12,14 @@ Microsoft [says](https://support.microsoft.com/en-us/help/318804/how-to-set-a-wi
 \* I only thought it worked, it was another events firing to my callback.
 
 # Not working (yet?)
-Sorry for disappointing you. I thought it was warking but it wasn't. 
+Sorry for disappointing you. I thought it was working but it wasn't. 
 There is some chance someone could take this to the end.
 
 Registering hook is not causing any error. (In LastWinError is success code).
 Maybe there is something that must be done or this is really not possible.
 
 There are some alternatives for this problem:
-- write part or whole application in C++ (if only part, it may be used by pinvoke from C# app)
+- write part or whole application in C++ (if only part, it may be used by pinvoke from C# app)[Start here](https://www.codeproject.com/Articles/18638/Using-Window-Messages-to-Implement-Global-System-H)
 - use of [custom driver](http://www.oblita.com/interception) wich does this work for you.
 
 ## Idea
